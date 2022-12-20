@@ -11,8 +11,8 @@ method = input('Enter the name of the method to run (Trap, Simp, MPoint, or IAna
 
 try
     % Evaluate the chosen method using the feval function
-    % arg = {f, a, b, n};
-    result = feval(method, f, a, b, n);
+     arg = {f, a, b, n};
+    result = feval(method, arg);
     % disp(result);
 catch ME
     % If an error or exception occurs, print an error message
